@@ -3,6 +3,8 @@
  
 # Unignore all with extensions
 !.gitignore
+!.gitattributes
+
 !*.cpp
 !*.txt
 !*.c

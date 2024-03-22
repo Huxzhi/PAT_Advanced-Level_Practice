@@ -58,9 +58,12 @@
 
 在图的之后的文件才考虑到输入输出的麻烦
 
-添加了一个自定义头文件 `localCheck.h`，用 重定向输入流和输出流实现从文件中读取测试数据，用了两个自己写的宏定义 ``
+添加了一个自定义头文件 `localCheck.h`，用 重定向输入流和输出流实现从文件中读取测试数据，用了两个自己写的宏定义
 
-在 vs code 里会自动检测工作区内的头文件，在编译的时候需要加上 `-I $workspaceRoot`
+- `FREOPEN` 在读取输入流之前
+- `CHECK` 在 `return 0` 的前面 即可
+
+在 VS Code 里会自动检测工作区内的头文件，在编译的时候需要加上 `-I $workspaceRoot`
 
 - 使用 `run coder` 插件，设置为 `  "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt -I $workspaceRoot && $dir$fileNameWithoutExt",`
 - debug 则在 `.vscode/c_cpp_properties.json` 加上`includePath:["${workspaceFolder}/**"]` 对应的
