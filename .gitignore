@@ -6,7 +6,8 @@
 !.gitattributes
 
 !*.cpp
-!*.txt
+!input.txt
+!output.txt
 !*.c
 !*.h
 !*.md
