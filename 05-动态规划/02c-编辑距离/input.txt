@@ -1,0 +1,6 @@
+3 2
+abc
+acd
+bed
+ab 1
+acbd 2
